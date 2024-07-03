@@ -26,7 +26,7 @@ def send_request(token):
         'user-agent': 'Mozilla/5.0 (Linux; Android 13; M2012K11AG Build/TKQ1.220829.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/126.0.6478.71 Mobile Safari/537.36',
         'x-requested-with': 'org.telegram.messenger.web'
     }
-    data = '{"user_id":968480911}'
+    data = '{"user_id":1002162534560}'
     response = requests.post(url, headers=headers, data=data)
     if 'spin' in response.json():
         spin_result = response.json()['spin']
